@@ -2,9 +2,9 @@
   <img src="assets/logo_144.png" height="100">
 </p>
 
-# performance-x-extension
+# Performance-X
 
-> Chrome, Chrome OS, OPERA, EDGE
+> Chrome, Chrome OS, OPERA, EDGE, other Chrome-based web browsers
 
 [![Download at Chrome Store](https://github.com/loouislow81/performance-x-extension/blob/main/assets/chrome_store.png?raw=true)](https://chrome.google.com/webstore/detail/performance-x/ejhcfhdghpippilemgcagchdkpheiabf)
 
