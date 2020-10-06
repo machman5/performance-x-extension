@@ -3,7 +3,7 @@
   "short_name": "Performance-X",
   "version": "1.0.0",
   "description": "Accelerate page load, enhance image and video color, antialiased typography and more.",
-  "homepage_url": "https://github.com/loouislow81/performance-x",
+  "homepage_url": "https://github.com/loouislow81/performance-x-extension",
   "icons": {
     "144": "img/144.png",
     "128": "img/128.png",
