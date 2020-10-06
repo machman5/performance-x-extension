@@ -8,6 +8,10 @@
 
 [![Download at Chrome Store](https://github.com/loouislow81/performance-x-extension/blob/main/assets/chrome_store.png?raw=true)](https://chrome.google.com/webstore/detail/performance-x/ejhcfhdghpippilemgcagchdkpheiabf)
 
+<p align="left">
+  <img src="assets/promo.png" height="auto">
+</p>
+
 Accelerate page load, enhance image and video color, anti-aliased typography and more to come.
 
 The internet should be entertaining and beautiful. `Performance-X` brings internet experience to the new level.
