@@ -6,7 +6,7 @@
 
 > Chrome, Chrome OS, OPERA, EDGE
 
-[![Download at Chrome Store](https://github.com/loouislow81/performance-x-extension/blob/master/assets/chrome_store.png?raw=true)](https://chrome.google.com/webstore/detail/performance-x/ejhcfhdghpippilemgcagchdkpheiabf)
+[![Download at Chrome Store](https://github.com/loouislow81/performance-x-extension/blob/main/assets/chrome_store.png?raw=true)](https://chrome.google.com/webstore/detail/performance-x/ejhcfhdghpippilemgcagchdkpheiabf)
 
 Accelerate page load, enhance image and video color, anti-aliased typography and more to come.
 
