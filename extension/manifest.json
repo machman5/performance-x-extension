@@ -1,0 +1,43 @@
+{
+  "name": "Performance-X",
+  "short_name": "Performance-X",
+  "version": "1.0.0",
+  "description": "Accelerate page load, enhance image and video color, antialiased typography and more.",
+  "homepage_url": "https://github.com/loouislow81/performance-x",
+  "icons": {
+    "144": "img/144.png",
+    "128": "img/128.png",
+    "48": "img/48.png",
+    "16": "img/16.png"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "modules/stamina_cache.js"
+    ]
+  },
+  "content_scripts": [{
+    "css": [ 
+      "modules/gpu_rendering.css", 
+      "modules/color_enhancer.css",
+      "modules/slim_scrollbar.css"
+    ],
+    "js": [
+      "modules/active_cache.js"
+    ],
+    "matches": [ 
+      "<all_urls>" 
+    ],
+    "run_at": "document_idle"
+  }],
+  "manifest_version": 2,
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "permissions": [
+    "<all_urls>", 
+    "webRequest", 
+    "webRequestBlocking", 
+    "storage"
+  ],
+  "incognito": "spanning",
+  "offline_enabled": false
+}

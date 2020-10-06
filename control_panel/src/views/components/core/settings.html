@@ -1,0 +1,100 @@
+<core-settings>
+
+  <y class="pt-8 max-w-lg">
+    <y class="py-4">
+
+      <button-options
+        text="{ state.staminastatus }"
+        color="{ state.staminacolor }"
+        triggeron="{ enableStaminaCache }"
+        triggeroff="{ disableStaminaCache }"
+        showenable="{ state.staminashow }"
+        showedisable="{ state.staminahide }"
+        title="{ stamina.title }"
+        desc="{ stamina.desc }">
+      </button-options>
+
+    </y>
+  </y>
+
+
+  <script>
+    var staminaKey = 'performance.x.stamina.cache'
+    var staminaStatus = 'isON'
+    var sKey = window.localStorage.getItem(staminaKey)
+
+    export default {
+      state: {
+        staminastatus: 'OFF',
+        staminacolor: 'text-nero-300 bg-nero-600',
+        staminashow: 'z-10 block',
+        staminahide: 'hidden',
+
+
+      },
+      stamina: {
+        title: 'Stamina Cache',
+        desc: 'Prologing cache duration almost infinitely.'
+      },
+      active: {
+        title: 'Active Cache',
+        desc: 'Preload page and cache at the background before you visit.'
+      },
+      color: {
+        title: 'Color Enhancer',
+        desc: 'Improve image and video color more vivid and beautiful.'
+      },
+      scrollbar: {
+        title: 'Slim Scrollbar',
+        desc: 'Replace native scrollbar with a cleaner, elegant and less noisy'
+      },
+
+      enableStaminaCache(e) {
+        e.preventDefault()
+        this.update({
+          staminastatus: 'ON',
+          staminacolor: 'text-nero-500 bg-nero-300',
+          staminashow: 'hidden',
+          staminahide: 'z-10 block'
+        })
+        // add key
+        window.localStorage.setItem(staminaKey, staminaStatus)
+        console.log('Stamina Cache is ON, settings stored!')
+      },
+      disableStaminaCache(e) {
+        e.preventDefault()
+        this.update({
+          staminastatus: 'OFF',
+          staminacolor: 'text-nero-300 bg-nero-600',
+          staminashow: 'z-10 block',
+          staminahide: 'hidden'
+        })
+        // remove key
+        window.localStorage.removeItem(staminaKey, staminaStatus)
+        console.log('Stamina Cache settings is removed!')
+      },
+      onMounted() {
+
+        try {
+
+          if (staminaStatus === sKey) {
+            // update button state
+            this.update({
+              staminastatus: 'ON',
+              staminacolor: 'text-nero-500 bg-nero-300',
+              staminashow: 'hidden',
+              staminahide: 'z-10 block'
+            })
+            console.log('Stamina has settings, run func!')
+          }
+        }
+        catch (error) {
+          console.log(error)
+        }
+
+      }
+
+    }
+  </script>
+
+</core-settings>

@@ -1,0 +1,33 @@
+<button-options>
+
+  <y class="flex justify-start items-center">
+
+    <y class="relative -mt-10 mr-32">
+
+      <button class="{ props.showenable } absolute top-0 left-0 appearance-none focus:outline-none mr-5 p-2 w-24 text-lg font-semibold { props.color } hover:bg-nero-400 rounded cursor-pointer transition duration-500 ease-in-out"
+              type="button"
+              onclick="{ props.triggeron }">
+        { props.text }
+      </button>
+
+      <button class="{ props.showdisable } absolute top-0 left-0 appearance-none focus:outline-none mr-5 p-2 w-24 text-lg font-semibold { props.color } hover:bg-nero-400 rounded cursor-pointer transition duration-500 ease-in-out"
+              type="button"
+              onclick="{ props.triggeroff }">
+        { props.text }
+      </button>
+
+    </y>
+
+    <y>
+      <y class="font-semibold text-indigo-500">
+        { props.title }
+      </y>
+
+      <y class="text-sm text-nero-300">
+        { props.desc }
+      </y>
+    </y>
+
+  </y>
+
+</button-options>
