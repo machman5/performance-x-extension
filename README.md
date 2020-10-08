@@ -9,7 +9,7 @@
 [![Download at Chrome Store](https://github.com/loouislow81/performance-x-extension/blob/main/assets/chrome_store.png?raw=true)](https://chrome.google.com/webstore/detail/performance-x/ejhcfhdghpippilemgcagchdkpheiabf)
 
 <p align="left">
-  <img src="assets/promo.jpg" height="auto">
+  <img src="assets/promo_01.jpg" height="auto">
 </p>
 
 Accelerate page load, enhance image and video color, anti-aliased typography and more to come.
