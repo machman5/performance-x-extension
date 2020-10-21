@@ -18,6 +18,10 @@ The internet should be entertaining and beautiful. `Performance-X` brings intern
 
 #### _features
 
+(v1.0.1)
+- Startup Defreeze (browser startup uses as minimum memory as possible).
+
+(v1.0.0)
 - Anti-Aliasing Typography (font smoothing render).
 - Color Enhancer (image and video post-processing).
 - Active Caching (predictable page preload before you visiting).
