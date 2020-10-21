@@ -1,21 +1,18 @@
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
   height: 10px
 }
 
-::-webkit-scrollbar-thumb{
-  background-color: rgba(168,168,168,.25);
+::-webkit-scrollbar-thumb {
+  background-color: rgba(168, 168, 168, .25);
   border: 2px solid transparent;
   background-clip: padding-box
 }
 
-::-webkit-scrollbar-thumb:hover{
-  background-color: rgba(168,168,168,1)
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(168, 168, 168, 1)
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: transparent
 }
-
-
-
