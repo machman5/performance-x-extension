@@ -13,30 +13,30 @@
   "background": {
     "persistent": true,
     "scripts": [
-      "modules/stamina_cache.js",
-      "modules/startup_defreeze.js"
+      "modules/startup_defreeze.js",
+      "modules/stamina_cache.js"
     ]
   },
   "content_scripts": [{
-    "css": [ 
-      "modules/gpu_rendering.css", 
+    "css": [
+      "modules/gpu_rendering.css",
       "modules/color_enhancer.css",
       "modules/slim_scrollbar.css"
     ],
     "js": [
       "modules/active_cache.js"
     ],
-    "matches": [ 
-      "<all_urls>" 
+    "matches": [
+      "<all_urls>"
     ],
     "run_at": "document_idle"
   }],
   "manifest_version": 2,
   "update_url": "https://clients2.google.com/service/update2/crx",
   "permissions": [
-    "<all_urls>", 
-    "webRequest", 
-    "webRequestBlocking", 
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
     "storage",
     "tabs"
   ],

@@ -1,11 +1,5 @@
 "use strict";
 
-chrome.runtime.onStartup.addListener(function() {
-  var autoNewTab = (localStorage.getItem('autoNewTab') || 'true') == 'true';
-  var discardPinned = (localStorage.getItem('discardPinned') || 'true') == 'true';
-  discardAllTabs(autoNewTab, discardPinned);
-});
-
 // discard all tabs in all windows
 function discardAllTabs(autoNewTab, discardPinned) {
   // discard all tabs at startup
@@ -111,3 +105,14 @@ function isNewTab(tab) {
 function isActiveTab(tab) {
   return tab.active;
 }
+
+chrome.runtime.onStartup.addListener(function() {
+  // put all tabs to sleep
+  var autoNewTab = localStorage.getItem('autoNewTab') == 'true';
+  var discardPinned = localStorage.getItem('discardPinned') == 'true';
+  discardAllTabs(autoNewTab, discardPinned);
+
+  // open new tab to prevent loading last saved tab
+  var action_url = "chrome://newtab/";
+  chrome.tabs.create({ url: action_url });
+});
