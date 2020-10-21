@@ -113,6 +113,6 @@ chrome.runtime.onStartup.addListener(function() {
   discardAllTabs(autoNewTab, discardPinned);
 
   // open new tab to prevent loading last saved tab
-  var action_url = "chrome://newtab/";
-  chrome.tabs.create({ url: action_url });
+  // var action_url = "chrome://newtab/";
+  // chrome.tabs.create({ url: action_url });
 });
